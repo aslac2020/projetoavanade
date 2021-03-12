@@ -1,0 +1,34 @@
+h1 {
+    font-size: 40px;
+    color: #e04d08;
+    font-style: inherit;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(12, 8, 2);
+    font-style: inherit;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recursos{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    flex-direction: column;
+}
