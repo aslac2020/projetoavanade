@@ -8,7 +8,14 @@
 <body>
     <h1>Trabalhe Conosco</h1>
 
-    <form class="example-form">
+    <section>
+        <div class="classbotoes">
+           
+        </div>
+    </section>
+    
+
+    <form *ngIf="exibirFormulario" id="formscadastro" class="example-form">
         <table class="example-full-width" cellspacing="0"><tr>
           <td><mat-form-field class="example-full-width">
             <mat-label>Nome</mat-label>
@@ -56,7 +63,9 @@
               <textarea matInput placeholder="Ex. 119999-0000 "></textarea>
             </mat-form-field>
           </p>
-      </form>
-        
+          <div class="classbotoes">
+            <button class="btnSalvar" (click)="cadastrar()" mat-raised-button>Salvar</button>
+          </div>
+      </form>  
 </body>
 </html>

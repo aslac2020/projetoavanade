@@ -21,3 +21,30 @@ h1{
   td {
     padding-right: 8px;
   }
+
+ .btnOpen{
+    background-color: black;
+    color: white;
+  }
+
+  .classbotoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btnSalvar{
+    margin-left: 20px;
+    background-color: orangered;
+    color: white;
+  }
+
+
+  
+  @media (max-width: 400px){
+
+   form{
+    width: 50%;
+   }
+
+    }

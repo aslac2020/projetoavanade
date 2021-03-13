@@ -12,6 +12,7 @@ import { DiversidadeComponent } from './diversidade/diversidade.component';
 import {MatButtonModule} from '@angular/material/button';
 import { TrabalheconoscoComponent } from './trabalheconosco/trabalheconosco.component';
 import {MatInputModule} from '@angular/material/input';
+import { QuemsoueuComponent } from './quemsoueu/quemsoueu.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {MatInputModule} from '@angular/material/input';
     HomeComponent,
     PessoasComponent,
     DiversidadeComponent,
-    TrabalheconoscoComponent
+    TrabalheconoscoComponent,
+    QuemsoueuComponent
   ],
   imports: [
     BrowserModule,
