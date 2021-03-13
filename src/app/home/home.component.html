@@ -11,7 +11,7 @@
       <button mat-icon-button  class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
       </button>
-      <span>Avanade</span>
+      <img class="logo" src="assets/images/logo.png" alt="">
       <span class="example-spacer"></span>
       <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
         <mat-icon>favorite</mat-icon>
@@ -21,8 +21,19 @@
       </button>
     </mat-toolbar>
 
-    <avanade-diversidade></avanade-diversidade>
+    <section>
+      <avanade-diversidade> </avanade-diversidade>
+      <img class="banner" src="assets/images/diversidade.jpg" alt="">
+    </section>
 
-    <avanade-pessoas></avanade-pessoas>
+      <section class="quantpessoas">
+        <avanade-pessoas [valorPessoas]="valor"></avanade-pessoas>
+      </section>
+    
+      <section>
+        <avanade-trabalheconosco></avanade-trabalheconosco>
+      </section>
+  
+   <footer class="footer"></footer>
 </body>
 </html>

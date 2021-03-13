@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'avanade-diversidade',
@@ -12,4 +12,5 @@ export class DiversidadeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() image: string = 'assets/images/diversidade.jpg';
 }

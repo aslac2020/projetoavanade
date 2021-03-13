@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {Pessoas} from '../models/pessoas';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'avanade-home',
@@ -10,10 +9,12 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-
-
+  
+  valor: number;
   
   ngOnInit(): void {
+    this.valor = 8;
   }
 
+  
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Trabalhe Conosco</h1>
+
+    <form class="example-form">
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Nome</mat-label>
+            <input matInput>
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Sobrenome</mat-label>
+            <input matInput>
+          </mat-form-field></td>
+        </tr></table>
+      
+        <p>
+          <mat-form-field class="example-full-width">
+            <mat-label>Endereço</mat-label>
+            <textarea matInput placeholder="Ex. Rua "></textarea>
+          </mat-form-field>
+        </p>
+      
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Cidade</mat-label>
+            <input matInput placeholder="Ex. São Paulo">
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Estado</mat-label>
+            <input matInput placeholder="Ex. São Paulo">
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Cep</mat-label>
+            <input matInput #postalCode maxlength="9" placeholder="Ex. 0000-0000" value="">
+            <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+          </mat-form-field></td>
+        </tr></table>
+
+        <p>
+            <mat-form-field class="example-full-width">
+              <mat-label>Email</mat-label>
+              <textarea matInput placeholder="Ex. aaaa@aaaa "></textarea>
+            </mat-form-field>
+          </p>
+
+          <p>
+            <mat-form-field class="example-full-width">
+              <mat-label>Telefone</mat-label>
+              <textarea matInput placeholder="Ex. 119999-0000 "></textarea>
+            </mat-form-field>
+          </p>
+      </form>
+        
+</body>
+</html>

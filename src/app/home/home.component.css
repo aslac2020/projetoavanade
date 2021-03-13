@@ -1,14 +1,88 @@
+/*zerar margins para todos navegadores*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*tamanho automatico pros elementos*/
+}
 
 .example-spacer {
     flex: 1 1 auto;
   }
 
   .example-icon{
-    background-color: white;
+    background-color: black;
   }
 
   .toolbar{
-    background-color:#e04d08;
+    background-color:#f4bd21;
+  }
+
+  .logo{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  .footer{
+    background-color: orangered;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  td, th {
+    border: 2px solid #000;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
   }
 
 
+  .quantpessoas{
+    margin-bottom: 30px;
+    margin-top: 100px;
+  }
+
+
+  /* medias queries */
+  @media (max-width: 1024px){
+    .div{
+        width: 90%;
+    }
+        .table{
+          width: 50%;
+        }
+
+    }
+
+    @media (max-width: 400px){
+      .div{
+          width: 90%;
+      }
+
+      h1 {
+        width: 50%;
+        font-size: 15px;
+      }
+          .table{
+            width: 50%;
+          }
+  
+      }
+  
+
+  
+  

@@ -1,6 +1,6 @@
 .tablepessoas{
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 500px;
     margin-left: 10px;
     align-items: center;
     justify-content: center;
@@ -9,3 +9,62 @@
 .tablepessoas th {
     padding-left: 20px;
 }
+
+h1{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+/* table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+  } */
+  
+  td, th {
+    border: 2px solid #000;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .example-button-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .example-button-row button{
+      background-color: black;
+      color: white;   
+  }
+
+  .example-button-row .btnOpen{
+    background-color: black;
+    color: white;
+  }
+
+  .example-button-row  .btnClose{
+    margin-left: 20px;
+    background-color: orangered;
+    color: white;
+  }

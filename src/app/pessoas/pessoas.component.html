@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <table class="tablepessoas">
+
+<h1>Conheça nossa Equipe</h1>
+
+<section>
+    <div class="example-button-row">
+      <button class="btnOpen" (click)="exibeTable()" mat-raised-button color="danger">CLIQUE AQUI</button>
+      <button class="btnClose" (click)="closeTable()" mat-raised-button color="danger">FECHAR</button>
+    </div>
+  </section>
+
+    <table *ngIf="exibirTable">
         <thead>
             <th>Foto</th>
             <th>Name</th>
@@ -14,8 +24,20 @@
             <th>Email</th>
             <th>Telefone</th>
         </thead>
-
+        <tr *ngFor="let pessoas of listaPessoas">
+            <td><img [src]="pessoas.foto" width="80" height="80"></td>
+            <td>{{pessoas.name}}</td>
+            <td>{{pessoas.raca}}</td>
+            <td>{{pessoas.email}}</td>
+            <td>{{pessoas.telefone}}</td>
+          </tr>
     </table>
     
+  <section class="quantpessoas">
+    <div>
+      <h1>Quantidade de Pessoas: {{valorPessoas}}</h1>
+    </div>
+  </section>
+
 </body>
 </html>
