@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'avanade-trabalheconosco',
@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trabalheconosco.component.css']
 })
 export class TrabalheconoscoComponent  implements OnInit {
+
   exibirFormulario: boolean = true;
+  nome: string = 'Ótima';
+  newName: string;
 
   cadastrar(){
     alert('Cadastro efetuado com sucesso!');
@@ -17,4 +20,9 @@ export class TrabalheconoscoComponent  implements OnInit {
   ngOnInit(): void {
   }
 
+   Opniao(){
+     this.nome = this.newName
+   }
+
+   opniao : string = 'muito boa'
  }

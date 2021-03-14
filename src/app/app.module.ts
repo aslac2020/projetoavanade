@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,6 +13,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { TrabalheconoscoComponent } from './trabalheconosco/trabalheconosco.component';
 import {MatInputModule} from '@angular/material/input';
 import { QuemsoueuComponent } from './quemsoueu/quemsoueu.component';
+import {MatCardModule} from '@angular/material/card';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -31,7 +33,10 @@ import { QuemsoueuComponent } from './quemsoueu/quemsoueu.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,18 @@
+h1{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.texto{
+    font-size: 15px;
+    font-style: italic;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
