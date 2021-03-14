@@ -72,6 +72,15 @@
     margin-top: 50px;
   }
 
+  a {
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  #btnLike{
+    background-color: red;
+  }
+
 
   /* medias queries */
   @media (max-width: 1024px){

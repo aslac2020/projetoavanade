@@ -15,5 +15,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.valor = 8;
   }
+
+  like(){
+    alert('Eu curti :)');
+  }
     
 }

@@ -1,42 +1,48 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avanade Talentos</title>
-</head>
-<body>   
-    <mat-toolbar class="toolbar" color="primary">
-      <button mat-icon-button  class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <img class="logo" src="assets/images/logo.png" alt="">
-      <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon>
-      </button>
-    </mat-toolbar>
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Avanade Talentos</title>
+  </head>
+  <body>   
+      <mat-toolbar class="toolbar" color="primary">
+        <button mat-button [matMenuTriggerFor]="menu">Menu
+          <mat-icon>menu</mat-icon>
+        </button>
+      <mat-menu #menu="matMenu">
+      <a href="#pessoas"><button mat-menu-item>Conheça nossa equipe</button></a>
+    <a href="#trabalheconosco"><button mat-menu-item>Trabalhe conosco</button></a>
+    <a href="#quemsoueu"><button mat-menu-item>Quem sou eu</button></a>
+  </mat-menu>
+        <img class="logo" src="assets/images/logo.png" alt="">
+        <span class="example-spacer"></span>
+        <button (click)="like()" id="btnLike" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <a href="https://www.avanade.com/pt-br"> <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+      </a>
+      </mat-toolbar>
 
-    <section>
-      <avanade-diversidade> </avanade-diversidade>
-      <img class="banner" src="assets/images/diversidade.jpg" alt="">
-    </section>
-
-      <section class="quantpessoas">
-        <avanade-pessoas [valorPessoas]="valor"></avanade-pessoas>
+      <section>
+        <avanade-diversidade> </avanade-diversidade>
+        <img class="banner" src="assets/images/diversidade.jpg" alt="">
       </section>
+
+        <section id="pessoas" class="quantpessoas">
+          <avanade-pessoas [valorPessoas]="valor"></avanade-pessoas>
+        </section>
+      
+        <section id="trabalheconosco">
+          <avanade-trabalheconosco></avanade-trabalheconosco>
+        </section>
+
+        <section id="quemsoueu">
+          <avanade-quemsoueu></avanade-quemsoueu>
+        </section>
     
-      <section>
-        <avanade-trabalheconosco></avanade-trabalheconosco>
-      </section>
-
-      <section>
-        <avanade-quemsoueu></avanade-quemsoueu>
-      </section>
-  
-</body>
-</html>
+  </body>
+  </html>

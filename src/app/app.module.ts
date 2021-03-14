@@ -15,6 +15,7 @@ import {MatInputModule} from '@angular/material/input';
 import { QuemsoueuComponent } from './quemsoueu/quemsoueu.component';
 import {MatCardModule} from '@angular/material/card';
 import { CommonModule } from '@angular/common';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { CommonModule } from '@angular/common';
     MatInputModule,
     MatCardModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

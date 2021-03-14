@@ -8,7 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TrabalheconoscoComponent  implements OnInit {
 
   exibirFormulario: boolean = true;
-  nome: string = 'Ótima';
   newName: string;
 
   cadastrar(){
@@ -19,10 +18,6 @@ export class TrabalheconoscoComponent  implements OnInit {
 
   ngOnInit(): void {
   }
-
-   Opniao(){
-     this.nome = this.newName
-   }
 
    opniao : string = 'muito boa'
  }
