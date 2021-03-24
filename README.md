@@ -5,7 +5,7 @@
 
 Projeto Avanade- Desafio do Projeto do  **Bootcamp Avanade Angular**, junto com a plataforma *DIO*.
 
-Consiste em um site com referência no Netflix.
+Consiste em um site desafio SPA
 
 ## Layout web
 ![Web 1](https://github.com/aslac2020/imagespublicacao/blob/main/assets/images/Sites/projetoavanade.PNG)
